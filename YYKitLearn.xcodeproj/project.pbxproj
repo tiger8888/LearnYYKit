@@ -13,9 +13,11 @@
 		26B4FBCA1D2A425F0011FAE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26B4FBC81D2A425F0011FAE5 /* Main.storyboard */; };
 		26B4FBCC1D2A425F0011FAE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26B4FBCB1D2A425F0011FAE5 /* Assets.xcassets */; };
 		26B4FBCF1D2A425F0011FAE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26B4FBCD1D2A425F0011FAE5 /* LaunchScreen.storyboard */; };
+		CE8ED5AD4D5257FFF3D07EA1 /* libPods-YYKitLearn.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E95BA74AB0A2F486A92C5D7D /* libPods-YYKitLearn.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1735B858A743CBE6DEB75DAC /* Pods-YYKitLearn.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YYKitLearn.release.xcconfig"; path = "Pods/Target Support Files/Pods-YYKitLearn/Pods-YYKitLearn.release.xcconfig"; sourceTree = "<group>"; };
 		26B4FBBC1D2A425F0011FAE5 /* YYKitLearn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YYKitLearn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26B4FBC01D2A425F0011FAE5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		26B4FBC21D2A425F0011FAE5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +28,8 @@
 		26B4FBCB1D2A425F0011FAE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		26B4FBCE1D2A425F0011FAE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		26B4FBD01D2A425F0011FAE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F486F88AF36044D9FD25DBA /* Pods-YYKitLearn.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YYKitLearn.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YYKitLearn/Pods-YYKitLearn.debug.xcconfig"; sourceTree = "<group>"; };
+		E95BA74AB0A2F486A92C5D7D /* libPods-YYKitLearn.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YYKitLearn.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE8ED5AD4D5257FFF3D07EA1 /* libPods-YYKitLearn.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +49,8 @@
 			children = (
 				26B4FBBE1D2A425F0011FAE5 /* YYKitLearn */,
 				26B4FBBD1D2A425F0011FAE5 /* Products */,
+				E1FE7F9C98E709BB49DCC4BB /* Pods */,
+				8CB15803BF836FCA553E2373 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +86,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		8CB15803BF836FCA553E2373 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E95BA74AB0A2F486A92C5D7D /* libPods-YYKitLearn.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E1FE7F9C98E709BB49DCC4BB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9F486F88AF36044D9FD25DBA /* Pods-YYKitLearn.debug.xcconfig */,
+				1735B858A743CBE6DEB75DAC /* Pods-YYKitLearn.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 26B4FBD31D2A425F0011FAE5 /* Build configuration list for PBXNativeTarget "YYKitLearn" */;
 			buildPhases = (
+				8270615D13DD68FA751598DF /* [CP] Check Pods Manifest.lock */,
 				26B4FBB81D2A425F0011FAE5 /* Sources */,
 				26B4FBB91D2A425F0011FAE5 /* Frameworks */,
 				26B4FBBA1D2A425F0011FAE5 /* Resources */,
+				DAE59980396891A598713B32 /* [CP] Embed Pods Frameworks */,
+				1C4BEAAC9ECA5D033FD4F303 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -143,6 +170,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1C4BEAAC9ECA5D033FD4F303 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YYKitLearn/Pods-YYKitLearn-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8270615D13DD68FA751598DF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DAE59980396891A598713B32 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YYKitLearn/Pods-YYKitLearn-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		26B4FBB81D2A425F0011FAE5 /* Sources */ = {
@@ -263,6 +338,7 @@
 		};
 		26B4FBD41D2A425F0011FAE5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F486F88AF36044D9FD25DBA /* Pods-YYKitLearn.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
@@ -275,6 +351,7 @@
 		};
 		26B4FBD51D2A425F0011FAE5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1735B858A743CBE6DEB75DAC /* Pods-YYKitLearn.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
@@ -304,6 +381,7 @@
 				26B4FBD51D2A425F0011FAE5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
